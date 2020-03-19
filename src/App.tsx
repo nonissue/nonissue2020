@@ -10,7 +10,7 @@ function App() {
         <h1>NONISSUE</h1>
         <ul>
           <li>
-            <a href="https://nonissue.org">Web</a>
+            <a href="https://github.com/nonissue">Github</a>
           </li>
           <li>
             <a href="https://instagram.com/nonissue">IG</a>
