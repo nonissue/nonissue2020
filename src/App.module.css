@@ -1,22 +1,25 @@
 .app {
   text-align: center;
   opacity: 0.8;
+  max-width: 680px;
+  margin: 0 auto;
 }
+
 .app-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.app a {
+header a {
   text-decoration: none;
   font-weight: 400;
   color: #212121;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: all 0.2s ease-in-out;
 }
 
-.app a:hover {
-  border-bottom: 1px solid #212121;
+header a:hover {
+  border-bottom: 2px solid #212121;
 }
 
 .app h1 {
@@ -26,29 +29,66 @@
   letter-spacing: 0.03em;
 }
 
-.app ul {
+header ul {
   margin: 0;
   list-style-type: none;
   padding: 0;
   font-size: 0.7em;
 }
-.app li {
+
+header li {
   display: inline;
   margin-right: 0.7em;
 }
 
-.app li:last-of-type {
+header li:last-of-type {
   margin-right: 0;
 }
 
-.app img {
-  opacity: 0.5;
+header img {
+  opacity: 0.1;
+  width: 128px;
+  height: 98px;
+  visibility: hidden;
+  transform: rotate(15deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+article {
+  text-align: left;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+article code {
+  color: #555;
+  font-size: 0.85em;
+  line-height: 1.15em;
+}
+
+article ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.85em;
+}
+
+article li {
+  padding: 0.2em 0em 0.2em 0;
+}
+
+article li > *:last-child {
+  /* float: right; */
+  /* background: red; */
+}
+
+article a {
+  color: #212121;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+article a:hover {
+  border-bottom: 1px solid #212121;
 }
 
 .App-header {
