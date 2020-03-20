@@ -1,7 +1,7 @@
 .app {
   text-align: center;
-  opacity: 0.8;
-  max-width: 680px;
+  /* opacity: 0.8; */
+  /* max-width: 680px; */
   margin: 0 auto;
 }
 
@@ -46,11 +46,12 @@ header li:last-of-type {
 }
 
 header img {
-  opacity: 0.1;
+  opacity: 1;
   width: 128px;
-  height: 98px;
-  visibility: hidden;
-  transform: rotate(15deg);
+  height: 128px;
+  /* height: 98px; */
+  /* visibility: hidden; */
+  /* transform: rotate(15deg); */
 }
 
 article {
@@ -59,21 +60,31 @@ article {
   margin: 0 auto;
 }
 
-article code {
-  color: #555;
-  font-size: 0.85em;
-  line-height: 1.15em;
+article h3 {
+  font-weight: 400;
+  /* text-decoration: underline; */
 }
 
 article ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 0.85em;
+  /* font-size: 0.85em; */
 }
 
 article li {
   padding: 0.2em 0em 0.2em 0;
+  margin: 0.5em 0;
+  /* border-bottom: 1px solid hsl(0, 0%, 90%); */
+}
+
+article code {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 1.15em;
+  /* float: right; */
+  margin-left: 0.85em;
 }
 
 article li > *:last-child {
@@ -83,17 +94,19 @@ article li > *:last-child {
 
 article a {
   color: #212121;
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.5px solid transparent;
   text-decoration: none;
+  font-weight: normal;
+  font-size: 0.85em;
   transition: all 0.2s ease-in-out;
 }
 article a:hover {
-  border-bottom: 1px solid #212121;
+  border-bottom: 0.5px solid #212121;
 }
 
 .App-header {
   /* min-height: 100vh; */
-  min-height: 50vh;
+  min-height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
