@@ -2,3 +2,10 @@
   Command = "yarn build"
   Functions = "src/functions"
   Publish = "build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  # force = true
+  # headers = {X-From = "Netlify"}
